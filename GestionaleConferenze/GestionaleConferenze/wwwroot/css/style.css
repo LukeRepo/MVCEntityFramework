@@ -1,0 +1,104 @@
+﻿body {
+	background-color: lightgoldenrodyellow;
+}
+
+div {
+	color: black;
+	margin: 5px 5px 5px 5px;
+}
+
+nav {
+	background-color: mintcream;
+	background-image: linear-gradient(to right, lightgray, mintcream);
+	color: white;
+}
+
+ul {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	color: white;
+}
+
+li {
+	background-color: none;
+	text-decoration: none;
+	font-weight: bold;
+	list-style: none;
+	display: inline-block;
+	font-size: 20px;
+	color: black;
+	margin: 2px 2px 2px 2px;
+}
+
+.spantitle {
+	font-size: 30px;
+	font-weight: bold;
+	font-style: normal;
+	color: blue;
+	margin: 10px 10px 10px 10px;
+}
+
+.spanproperty {
+	font-size: 15px;
+	font-weight: inherit;
+	font-style: normal;
+	color: black;
+	margin: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+}
+
+.errore {
+	color: red;
+}
+
+.spansubtitle {
+	font-size: 20px;
+	font-weight: bold;
+	font-style: normal;
+	color: black;
+	margin: 10px 10px 10px 10px;
+}
+
+.divcontainer {
+	display: block;
+	background-color: #D3D3D3;
+	border: none;
+}
+
+.divsubcontainer {
+	display: inline-block;
+	background-color: #FFFFFF;
+	border-style: hidden;
+	border: ridge;
+	border-color: blue;
+	margin: 5px 5px 5px 5px;
+}
+
+.divprincipale {
+	display: block;
+	border-style: dashed;
+	border-color: blueviolet;
+	background-color: aliceblue;
+	margin: 2px 2px 2px 2px;
+}
+
+button {
+	background-color: lightgray;
+	border: 5px black;
+	border-radius: 8px;
+	color: blue;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 1000;
+	margin: 4px 2px;
+	cursor: pointer;
+	margin: 10px 10px 10px 10px;
+}

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Gesstionale Conferenze Autori</title>
+	<link href="~/css/style.css" rel="stylesheet" />
+
+
+
+</head>
+<body>
+
+	<nav>
+		<div>
+			<div>
+				<ul>
+					<li><a asp-controller="Autore" asp-action="AggiungiAutore">Aggiungi autore</a></li>
+					<li><a asp-controller="Home" asp-action="CreaConferenza">Crea conferenza</a></li>
+					<li><a asp-controller="Home" asp-action="CercaConferenza">Crea conferenza</a></li>
+					<li><a asp-controller="Home" asp-action="Index">Index</a></li>
+
+					<li><a asp-controller="Partira" asp-action="Index">Conferenze</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div>
+		<div>
+			@RenderBody()
+		</div>
+	</div>
+	@RenderSection("scripts", required: false)
+</body>
+</html>

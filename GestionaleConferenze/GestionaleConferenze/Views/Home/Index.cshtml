@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Presentazione>
+	@foreach (Presentazione pres in Model)
+	{
+	<div style="display:block;border-style:solid">
+		<span>Corso: @pres.Nome</span><br />
+		<span class="span2"> Da: @pres.DataInizio A:@pres.DataFine</span><br />
+		<span class="span2">Iscritti:</span><br />
+		<span class="span2">nessuno</span><br />
+	</div>
+	}

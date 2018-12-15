@@ -1,0 +1,53 @@
+﻿@model IEnumerable<GestionaleConferenze.Models.Presentazione>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Titolo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataInizio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataFine)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Livello)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titolo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataInizio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataFine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Livello)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PresentazioneId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PresentazioneId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PresentazioneId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
